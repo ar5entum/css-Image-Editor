@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Image Editor</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>CSS Image Editor</h1>
+      <p>github.com/ar5entum</p>
+      <div class="editor">
+        <div id="dropArea">
+          <input type="file" id="fileInput" style="display: none" />
+          <!-- <img id="editedImage" src="" alt="Edited Image" /> -->
+        </div>
+        <div class="tools">
+          <div class="sliders">
+            <label>Brightness</label>
+            <input
+              type="range"
+              id="brightnessSlider"
+              min="0"
+              max="200"
+              value="100"
+            />
+            <label>Contrast</label>
+            <input
+              type="range"
+              id="contrastSlider"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </div>
+          <button class="export" onclick="processImage()">Export</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
